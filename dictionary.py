@@ -64,22 +64,23 @@
 # counter()
 
 
-students = {"Akmal": 64, "Tohir": 55, "Nodir": 76, "Zafar": 80}  # -> {"Zafar":80, "Nodir":76}
+students = {"Akmal": 94, "Tohir": 55, "Nodir": 76, "Zafar": 80}  # -> {"Zafar":80, "Nodir":76}
 max_ball_students_dict = {}
 
 def max_persons(max_score):
     for key, value in students.items():
         if max_score == value:
             max_ball_students_dict[key] = value
-            break
+            return key
+
 
 def max_ball_students():
     for i in range(2):
         max_score = max(students.values())
-        max_persons(max_score)
-        del students[max(students.keys())]
+        print(max_score)
+        key = max_persons(max_score)
+        del students[key]
 
     print(max_ball_students_dict)
-
 
 max_ball_students()
