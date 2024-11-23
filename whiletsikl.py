@@ -62,19 +62,11 @@
 #         break
 #     friends.append(name.capitalize())
 
-usd=12600
+usd = 12600
 while True:
-    sum=(input("pulni so'mdagi qiymatini kiriting: "))
-    if sum=='exit':
+    sum = (input("pulni so'mdagi qiymatini kiriting: "))
+    if sum == 'exit':
         print("Dastur yopildi")
         break
-    print(int(sum)/usd, "USD")
-
-
-
-
-
-
-
-
+    print(int(sum) / usd, "USD")
 

@@ -9,9 +9,9 @@
 #     count+=1
 
 
-a=int(input("A ni kiriting "))
-b=int(input("B ni kiriting "))
-d = 0
+# a=int(input("A ni kiriting "))
+# b=int(input("B ni kiriting "))
+# d = 0
 # while True:
 #     # d=a-b
 #     if a-b<0:
@@ -24,14 +24,24 @@ d = 0
 #         d=d-b
 #     elif a-b<b:
 #         print(b)
-if a-b<0:
-    print('bunday bulishi mumkin emas! ')
-elif a-b==0:
-    print("nol bo'sh joy yo'q")
-else:       #a-b>0
-    while a>=b:
-        a=a-b
-    if a==0:
-        print('joy qolmadi')
-    else:
-        print(a)
+# if a-b<0:
+#     print('bunday bulishi mumkin emas! ')
+# elif a-b==0:
+#     print("nol bo'sh joy yo'q")
+# else:       #a-b>0
+#     while a>=b:
+#         a=a-b
+#     if a==0:
+#         print('joy qolmadi')
+#     else:
+#         print(a)
+
+
+# list = [1, 34, 3, 4, 5, 6, 6, 7, 8, 9, 900, 123]
+# list2= list.copy()
+# list2.sort(reverse=True)
+# print(list2)
+#
+# print([x for x in list if x%2==0])
+
+
