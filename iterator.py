@@ -80,3 +80,10 @@ def fibonachi():
 resul = fibonachi()
 for i in range(50):
     print(next(resul))
+
+
+
+
+
+
+

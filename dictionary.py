@@ -64,23 +64,73 @@
 # counter()
 
 
-students = {"Akmal": 94, "Tohir": 55, "Nodir": 76, "Zafar": 80}  # -> {"Zafar":80, "Nodir":76}
-max_ball_students_dict = {}
+# students = {"Akmal": 94, "Tohir": 55, "Nodir": 76, "Zafar": 80}  # -> {"Zafar":80, "Nodir":76}
+# max_ball_students_dict = {}
+#
+# def max_persons(max_score):
+#     for key, value in students.items():
+#         if max_score == value:
+#             max_ball_students_dict[key] = value
+#             return key
+#
+#
+# def max_ball_students():
+#     for i in range(2):
+#         max_score = max(students.values())
+#         print(max_score)
+#         key = max_persons(max_score)
+#         del students[key]
+#
+#     print(max_ball_students_dict)
+#
+# max_ball_students()
 
-def max_persons(max_score):
-    for key, value in students.items():
-        if max_score == value:
-            max_ball_students_dict[key] = value
-            return key
+
+contact = {}
+
+print("""
+1- kontakt qo'shish
+2- kontaktni yangilash
+3-kontaktni o'chirish
+4-kontaktni qidirish
+""")
 
 
-def max_ball_students():
-    for i in range(2):
-        max_score = max(students.values())
-        print(max_score)
-        key = max_persons(max_score)
-        del students[key]
+def add_contact(name, number):
+    if name in contact:
+        print('Bunday kontakt bor ')
+    else:
+        contact[name] = number  # name= Aziz   number = +998914028105  dict[key]=value
 
-    print(max_ball_students_dict)
 
-max_ball_students()
+def update_contact(name, number):
+    contact[name] = number
+
+
+def remove_contact(name):
+    del contact[name]
+
+
+def find_contact(name):
+    print(contact[name])
+
+
+command = int(input("komandani tanlang"))
+
+if command == 1:
+    name = input("kontakt nomi")
+    number = input("Uning raqami ")
+    add_contact(name, number)
+
+elif command == 2:
+    name = input("kontakt nomi")
+    number = input("Uning raqami ")
+    update_contact(name, number)
+
+elif command == 3:
+    name = input("O'chirmoqchi bulgan kontaktiz nomini kiriting: ")
+    remove_contact(name)
+
+elif command == 4:
+    name = input("qidirayotgan kontaktning nomi : ")
+    find_contact(name)
